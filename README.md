@@ -12,6 +12,10 @@ so, now no need to run javascript code through the browser, you can install node
 
 ## Variables
 
+## why should we use variable types like const, var, let.
+
+so the variables type helps to the node.js to store there value in a memory stack or a heap.
+
 ## Print Value
 
 ## Data Types
