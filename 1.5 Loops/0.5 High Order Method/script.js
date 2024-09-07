@@ -89,7 +89,53 @@ const filterData = books.filter((items) => items.genre === "history");
 //   }
 // }
 
-
 // ***************  Reduce  **************************
 
+/*
+const list = [21, 31, 443, 54, 645, 77, 79];
+let accumulator = 0;
+for (let i of list) {
+  accumulator += i;
+}
+// console.log(accumulator);
 
+let wholeVale = list.reduce((acc, currentVal) => {
+  return (acc += currentVal);
+}, 0);
+
+console.log(wholeVale);
+*/
+
+const shoppingCart = [
+  {
+    itemName: "python",
+    price: 999,
+  },
+  {
+    itemName: "javascript",
+    price: 1999,
+  },
+  {
+    itemName: ".net",
+    price: 599,
+  },
+];
+
+const priceToPay = shoppingCart.reduce((acc, amount) => {
+  return acc + amount.price;
+}, 0);
+
+// console.log(priceToPay);
+
+// ********************  Chaining  *************************
+
+const myAnotherArray = [1, 2, 3, 4, 5];
+
+const res = myAnotherArray
+  .map((i) => i * 2)
+  .filter((j) => j >= 4)
+  .map((i) => i * 4)
+  .reduce((acc, cur) => {
+    return acc + cur
+  },0);
+console.log(res);
