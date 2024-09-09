@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  background-color: rgba(135, 135, 135, 0.4);
+}
+header {
+  background-color: rgb(32, 178, 170);
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  box-shadow: inset 0 0 1rem 0.1rem;
+  filter: drop-shadow(0 0 1rem gray);
+}
+
+#logo {
+  flex: 0.5;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style: none;
+  transition: font-size 1s linear;
+}
+
+li:hover {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
