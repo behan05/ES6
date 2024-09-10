@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bodyStyle {
+  background-color: lightslategray;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.paraStyle {
+  font-size: 1.2rem;
+  font-style: oblique;
+  text-shadow: 0 0 1rem;
+  /* visibility:hidden; */
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.inputStyle {
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.h1Style {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+ul {
+  box-shadow: inset 0 0 1rem 1rem lightseagreen;
+}
+li {
+  list-style: none;
+  font-size: 1.2rem;
+  font-style: oblique;
+  padding: 1rem;
+  margin: 0.1rem;
+}
