@@ -1,0 +1,12 @@
+body {
+  padding: 1rem;
+  background-color: gray;
+  color: #fff;
+}
+
+.li {
+  list-style: none;
+  color: red;
+  padding: 1rem;
+  line-height: 2rem;
+}
