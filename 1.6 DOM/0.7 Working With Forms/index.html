@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working With Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="#" method="get" enctype="multipart/form-data">
+      <fieldset>
+        <div id="profileImg">
+          <img
+            src=""
+            alt="profile Image"
+          />
+        </div>
+        <!-- name field -->
+        <label for="name">
+          Name
+          <input
+            type="text"
+            value=""
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            autocomplete="on"
+          />
+        </label>
+
+        <!-- email field -->
+        <label for="email">
+          Email
+          <input
+            type="email"
+            value=""
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+            autocomplete="on"
+          />
+        </label>
+
+        <!-- Number field -->
+        <label for="number">
+          Number
+          <input
+            type="number"
+            value=""
+            name="number"
+            id="number"
+            placeholder="Enter your Number"
+            autocomplete="on"
+          />
+        </label>
+
+        <!-- file field -->
+        <label for="file">
+          Browse Image
+          <input
+            type="file"
+            value=""
+            name="file"
+            id="file"
+            autocomplete="off"
+            accept=".png, .doc, .jpg, .jpeg"
+          />
+        </label>
+
+        <!-- ckeck-box field -->
+        <div id="checkbox">
+          <h4><a href="#">terms & condition</a></h4>
+          <label for="checkbox">
+            accept
+            <input
+              type="checkbox"
+              value=""
+              name="checkbox"
+              id="checkbox"
+              checked
+            />
+          </label>
+
+          <label for="checkbox">
+            cancel
+            <input type="checkbox" value="" name="checkbox" id="checkbox" />
+          </label>
+        </div>
+
+        <div id="button">
+          <button type="submit">Confirm</button>
+          <button type="reset">Cancel</button>
+        </div>
+        
+      </fieldset>
+    </form>
+
+    <div class="detail__about__Person">
+      <p>name:</p>
+      <p>Email</p>
+      <p>Number</p>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
