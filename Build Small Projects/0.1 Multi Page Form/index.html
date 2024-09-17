@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width  initial-scale=1.0" />
+    <title>Create multi page interactive forms</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- in the top of the page get to change dark mode -->
+    <!-- in the first page (fname,mname,lname,email,age,number, photo) -->
+
+    <!-- in the second page (qualification with option, college name, current location) -->
+    <!-- Access Current Location -->
+
+    <header>
+      <h2>your Logo</h2>
+      <i class="fa-regular fa-star" onclick="changeColor()"></i>
+    </header>
+
+    <form action="./second.html" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <!-- <div class="labels">
+          <label for="fname">Fname</label>
+          <label for="mname">Mname</label>
+          <label for="lname">Lname</label>
+          <label for="email">Email</label>
+          <label for="age">Age</label>
+          <label for="number">Number</label>
+        </div> -->
+        <div class="allInputs">
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Enter First Name"
+            autocomplete="off"
+            value=""
+          />
+          <input
+            type="text"
+            name="mname"
+            id="mname"
+            placeholder="Enter Middle Name"
+            autocomplete="off"
+            value=""
+          />
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Enter Last Name"
+            autocomplete="off"
+            value=""
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            autocomplete="off"
+            value=""
+          />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Enter Current Age"
+            autocomplete="off"
+            value=""
+          />
+          <input
+            type="tell"
+            name="number"
+            id="number"
+            placeholder="Enter Phone Number"
+            autocomplete="off"
+            value=""
+          />
+         
+          <a href="./second.html"><button type="button">Next..</button></a>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+  <script src="./script.js"></script>
+</html>

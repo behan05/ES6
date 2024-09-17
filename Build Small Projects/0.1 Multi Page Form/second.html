@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>next page of form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>your Logo</h2>
+      <i class="fa-regular fa-star" onclick="changeColor()"></i>
+    </header>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <div class="allInputs">
+          <input
+            type="url"
+            name="url"
+            id="url"
+            value=""
+            placeholder="Attach Your Website Link."
+          />
+
+          <label for="education">
+            Select Highest Education
+            <select name="education" id="education" value="">
+              <option value="10th">10th</option>
+              <option value="12th">12th</option>
+              <option value="diploma">Diploma</option>
+              <option value="high school">High School</option>
+              <option value="btech">B.Tech / B.E</option>
+              <option value="bce">BCA</option>
+            </select>
+          </label>
+          <input
+            type="file"
+            name="file"
+            id="file"
+            accept=".png,.jpeg,.jep,.doc"
+            value=""
+            autocomplete="off"
+          />
+         
+          <!-- <a onclick="getLocation()">Location Permission</a> -->
+          <button type="button">Confirm</button>
+          <a href="./index.html"><button type="button">Previous</button></a>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+  <script src="./script.js"></script>
+</html>

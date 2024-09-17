@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: gray;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+header h2 {
+  color: #fff;
+  flex: 1;
+  letter-spacing: 0.2rem;
+}
+header .fa-star {
+  color: #000;
+  font-weight: 900;
+}
+
+fieldset {
+  padding: 1rem;
+  display: flex;
+  border: none;
+}
+fieldset .allInputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+fieldset .allInputs input {
+  padding: 1rem;
+  margin: 8px 0;
+}
+fieldset .allInputs a button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 900;
+  transition: box-shadow 2s ease, filter 3s ease;
+}
+fieldset .allInputs a button:hover {
+  box-shadow: inset 0 0 1rem 1rem gray;
+  filter: drop-shadow(0 0 1rem gray);
+  backdrop-filter: blur(100px);
+}
+fieldset .allInputs button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 900;
+  transition: box-shadow 2s ease, filter 3s ease;
+}
+fieldset .allInputs button:hover {
+  box-shadow: inset 0 0 1rem 1rem gray;
+  filter: drop-shadow(0 0 1rem gray);
+  backdrop-filter: blur(100px);
+}
+
+/*# sourceMappingURL=style.css.map */
