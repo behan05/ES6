@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 1rem;
+}
+.logo__menu {
+  display: flex;
+  align-items: center;
+}
+.logo__menu #logo {
+  color: green;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  padding: 0 2rem 0 0;
+}
+.logo__menu #menuBarIcon {
+  color: #13002d;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+.searchBar input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.searchBar #searchIcon {
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.searchBar #searchIcon i {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0.5rem;
+  background-color: #13002d;
+  color: #fff;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+.message #bell {
+  color: #13002d;
+  font-size: 1.2rem;
+  padding: 0 2rem 0 0;
+}
+.message .profile {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.message .profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.message .profile img:hover {
+  transform: rotate(25deg) scale(1.4);
+}
+
+.main__container {
+  display: flex;
+}
+.main__container nav {
+  background-color: #fff;
+  position: relative;
+  left: 0;
+}
+.main__container nav .dashboard {
+  background-color: #19003d;
+  color: #fff;
+}
+.main__container nav .dashboard .icons i {
+  color: #fff;
+}
+.main__container nav .navOptions {
+  display: flex;
+  padding: 1rem 0.5rem;
+  transition: background-color 2s ease;
+}
+.main__container nav .navOptions .icons {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #13002d;
+}
+.main__container nav .navOptions p {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.main__container nav .navOptions:hover {
+  background-color: #13002d;
+  color: #fff;
+}
+.main__container nav .navOptions:hover .icons {
+  color: #fff;
+}
+.main__container main {
+  display: flex;
+  flex-direction: column;
+  background-color: #b8c2e4;
+  width: 100%;
+  height: 100%;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #19003d;
+  color: #fff;
+  padding: 1rem;
+  width: 12rem;
+  border-radius: 12px;
+  box-shadow: 0 0 0.5rem #13002d;
+}
+.cards .card .title h2 {
+  font-size: 1.1rem;
+}
+.cards .card .title p {
+  font-weight: 900;
+  text-shadow: 0 0 0.5rem #19003d;
+  letter-spacing: 0.1rem;
+}
+.cards .card .icon i {
+  font-size: 1.1rem;
+}
+
+.recent__articles {
+  padding: 1.5rem 4rem;
+}
+.recent__articles .main__articles {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 0.5rem;
+}
+.recent__articles .main__articles .article__title {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+.recent__articles .main__articles .article__title p {
+  flex: 1;
+  color: #13002d;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.recent__articles .main__articles .article__title button {
+  border: 1px solid #13002d;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background-color: #13002d;
+  color: #fff;
+  font-weight: 900;
+  transition: background-color 1s ease, color 1s ease;
+}
+.recent__articles .main__articles .article__title button:hover {
+  background-color: #fff;
+  color: #13002d;
+}
+.recent__articles .main__articles table {
+  width: 100%;
+}
+.recent__articles .main__articles table th {
+  padding: 1rem 1rem;
+  text-align: start;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.recent__articles .main__articles table td {
+  padding: 0.5rem 1rem;
+}
+
+footer {
+  background-color: #13002d;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  header #logo {
+    font-size: 1rem;
+  }
+  header #menuBarIcon {
+    margin: 0 1rem;
+  }
+  header .message {
+    display: none;
+  }
+  .main__container {
+    flex-direction: column;
+  }
+  nav {
+    display: none;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards .card {
+    width: 100%;
+  }
+  .recent__articles {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
