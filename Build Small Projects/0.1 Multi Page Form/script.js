@@ -1,20 +1,3 @@
-// Dark Mode Toggle
-
-function changeColor() {
-  const fa = document.querySelector(".fa-star");
-  const currentColor = getComputedStyle(fa).color;
-
-  if (currentColor == "#000" || currentColor == "rgb(0, 0, 0)") {
-    document.body.style.backgroundColor = "#000";
-    document.body.style.color = "#fff";
-    fa.style.color = "#fff";
-  } else {
-    document.body.style.backgroundColor = "#fff";
-    document.body.style.color = "#000";
-    fa.style.color = "#000";
-  }
-}
-
 // GET user Current Location (latitude and langitude)
 
 function getLocation() {
@@ -49,3 +32,40 @@ function errorCallBack(error) {
       break;
   }
 }
+
+///////////////////////////////////////////////////////
+
+// Dark Mode Toggle
+function applyTheme(theme) {
+  const fa = document.querySelector(".fa-star");
+
+  if (theme === "dark") {
+    document.body.style.backgroundColor = "#000";
+    document.body.style.color = "#fff";
+    fa.style.color = "#fff";
+  } else {
+    document.body.style.backgroundColor = "#fff";
+    document.body.style.color = "#000";
+    fa.style.color = "#000";
+  }
+}
+
+function changeColor() {
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme === "dark") {
+    // Switch to light theme
+    applyTheme("light");
+    localStorage.setItem("theme", "light");
+  } else {
+    // Switch to dark theme
+    applyTheme("dark");
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+// Apply saved theme on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  applyTheme(savedTheme);
+});
