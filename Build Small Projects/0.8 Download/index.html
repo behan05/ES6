@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image download</title>
+    <style>
+      body {
+        background-color: rebeccapurple;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+      img {
+        width: 400px;
+        height: auto;
+        border-radius: 12px;
+      }
+      #downloadBtn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        font-weight: 900;
+        letter-spacing: 0.2rem;
+        background-color: transparent;
+        border: 1px solid #ddd;
+        color: #fff;
+        border-radius: 12px;
+      }
+      #downloadBtn:hover {
+        background-color: rgb(125, 94, 156);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.unsplash.com/photo-1727262436067-6ac6dfc03e27?q=80&w=1354&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="download image"
+      draggable="true"
+      title="click on download button to download"
+      id="image"
+    />
+    <button id="downloadBtn">Download</button>
+  </body>
+  <script src="./script.js"></script>
+</html>
