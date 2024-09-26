@@ -1,0 +1,31 @@
+.slider {
+  position: relative; /* This lets the buttons appear over the slider */
+  max-width: 600px; /* Maximum width of the slider */
+  overflow: hidden; /* Hide any part of the images that go outside the container */
+}
+
+.slides {
+  display: flex; /* This arranges all images side by side (horizontally) */
+  transition: transform 0.5s ease-in-out; /* This makes the sliding smooth */
+}
+
+.slides img {
+  width: 100%; /* Each image will take up the full width of the container */
+}
+
+button {
+  position: absolute; /* Position buttons on top of the images */
+  top: 50%; /* Middle of the height */
+  transform: translateY(-50%); /* To center the button vertically */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White color for the arrow */
+  cursor: pointer; /* Changes the cursor to a hand icon when hovered */
+}
+
+button.prev {
+  left: 10px; /* Place the 'prev' button to the left */
+}
+
+button.next {
+  right: 10px; /* Place the 'next' button to the right */
+}
