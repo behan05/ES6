@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  /* background-color: #ddd; */
+  border: 1px solid #fff;
+}
+h2 {
+  flex: 0.2;
+}
+ul {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+#toggle-on {
+  font-weight: 900;
+  font-size: 1.1rem;
+  display: none;
+}
+
+#toggle-off {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+/* Main Section */
+.container {
+  display: flex;
+}
+
+aside {
+  flex: 0.2;
+}
+
+section {
+  flex: 1;
+  /* background-color: #ddd; */
+  padding: 1rem;
+}
+#imgDiv {
+  width: 280px;
+  overflow: hidden;
+  padding: 10px;
+  float: left;
+}
+
+#imgDiv > img {
+  width: 100%;
+  filter: drop-shadow(0 0 0.5rem gray) saturate(120%) brightness(110%);
+  border-radius: 22px;
+  transition: transform 1s ease;
+}
+
+#imgDiv > img:hover {
+  transform: scale(2) rotate(25deg);
+  cursor: pointer;
+}
+h2,
+p {
+  padding: 0.5rem;
+  clear: right;
+}
+
+section > p {
+  text-align: justify;
+  letter-spacing: 0.1rem;
+}
+
+/* SLIDER STYLING */
+
+.sliders {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slider {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  /* will-change: transform; */
+}
+
+.slider > img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+
+/* BUTTON STYLING */
+
+.navigation {
+  width: auto;
+  text-align: center;
+}
+button {
+  font-size: 1.1rem;
+  padding: 0.1rem;
+  margin: 0 2rem;
+  font-weight: 900;
+  background-color: green;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 0 1rem 0.2rem green;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.4);
+}
+
+@media (max-width: 620px) {
+  aside {
+    display: none;
+  }
+  #imgDiv {
+    min-width: 100%;
+  }
+  header > ul {
+    display: none;
+  }
+}
+
+.arrow-up {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.arrow-up i {
+  font-weight: 900;
+  color: #fff;
+  background-color: green;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 0 1rem 0.2rem green;
+  border-radius: 12px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.arrow-up i:hover {
+  transform: scale(1.4);
+}
+
+footer {
+  padding: 1rem;
+  background: #ddd;
+  text-align: center;
+  font-size: 1rem;
+}
